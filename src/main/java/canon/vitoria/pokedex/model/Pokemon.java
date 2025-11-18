@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
+import java.util.HashSet;
 import java.util.Set;
 
 @Getter
@@ -21,8 +22,22 @@ public class Pokemon {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
-    private Set<TipoPokemon> tipo;
+    private Set<Tipo> tipo;
     private Float altura;
     private Float peso;
 
+    public void setNome(String nome) {
+    }
+
+    public void setId(Object o) {
+    }
+
+    public void setAltura(Float altura) {
+    }
+
+    public void setPeso(Float peso) {
+    }
+
+    public void setTipos(HashSet<Tipo> tipos) {
+    }
 }

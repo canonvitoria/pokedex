@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import java.util.Set;
 
 @Entity
-public class TipoPokemon {
+public class Tipo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -13,6 +13,7 @@ public class TipoPokemon {
     @Enumerated(EnumType.STRING)
     private NomeTipo nome;
     private Set<Pokemon> pokemons;
+    
 
     enum NomeTipo {
         AGUA,
